@@ -13,8 +13,8 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
-        <selenium.version>4.15.0</selenium.version>
-        <appium.version>9.0.0</appium.version>
+        <selenium.version>4.11.0</selenium.version>
+        <appium.version>8.5.1</appium.version>
         <testng.version>7.8.0</testng.version>
     </properties>
 
@@ -39,18 +39,10 @@
         </dependency>
 
         <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.8.0</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.7</version>
         </dependency>
-
     </dependencies>
 
     <build>
