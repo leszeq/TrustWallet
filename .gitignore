@@ -1,0 +1,15 @@
+# Eclipse / IntelliJ
+*.iml
+.idea/
+*.class
+
+# Maven / Gradle
+target/
+build/
+
+# OS
+.DS_Store
+
+#APK
+src/test/resources/*.apk
+
