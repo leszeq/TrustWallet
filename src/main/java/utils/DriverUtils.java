@@ -9,7 +9,7 @@ import java.net.URL;
 
 public class DriverUtils {
 
-    private static AppiumDriver driver;
+    public static AppiumDriver driver;
 
     public static void initializeDriver() {
         DesiredCapabilities caps = new DesiredCapabilities();

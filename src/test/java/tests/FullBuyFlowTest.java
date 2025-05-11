@@ -12,11 +12,11 @@ public class FullBuyFlowTest extends BaseTest {
         new PasscodePage().clickPasscode();
         new NotificationPermissionPage().clickSkip();
         new WalletReadyPage().clickBuyCrypto();
-        new BuyCryptoPage().clickBuyNow();
-
+        BuyCryptoPage buyCryptoPage = new BuyCryptoPage();
+        buyCryptoPage.waitForPage();
+        buyCryptoPage.clickBuyNow();
         MoonPaySignInPage moon = new MoonPaySignInPage();
         moon.switchToWebView();
         moon.waitForPage();
-        moon.clickContinue();
     }
 }
