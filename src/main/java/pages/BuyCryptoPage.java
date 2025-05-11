@@ -11,7 +11,7 @@ public class BuyCryptoPage extends BasePage {
     @AndroidFindBy(accessibility = "Back")     private WebElement backButton;
     @AndroidFindBy(id = "toolbarTitle")        private WebElement titleText;
 
-    private final By buyNowBtn = By.xpath("//android.widget.TextView[@text='Buy Now']");
+    private final By buyNowBtn = By.xpath("//android.widget.TextView[contains(@text,'Buy Now')]");
 
     public void waitForPage() {
         wait.until(driver -> isDisplayed(buyNowBtn) || amountField.isDisplayed());

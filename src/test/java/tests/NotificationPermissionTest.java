@@ -4,6 +4,7 @@ import org.testng.annotations.*;
 import pages.*;
 
 import static org.testng.Assert.*;
+import static utils.DriverUtils.driver;
 
 public class NotificationPermissionTest extends BaseTest {
 
@@ -34,6 +35,7 @@ public class NotificationPermissionTest extends BaseTest {
     @Test
     public void allowNotifications() {
         notif.clickEnable();
-        new SystemPermissionPopup().allow();
+        SystemPermissionPopup popup = new SystemPermissionPopup(driver);
+        popup.clickAllow();
     }
 }
